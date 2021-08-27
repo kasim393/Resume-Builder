@@ -53,9 +53,9 @@ function generateCv() {
   document.getElementById("hrefFb").href = faceField;
   document.getElementById("hrefinsta").href = instaField;
   document.getElementById("hrefLin").href = linkedField;
-  document.getElementById("Tfb").innerHTML = faceField;
-  document.getElementById("Tinsta").innerHTML = instaField;
-  document.getElementById("Tlinked").innerHTML = linkedField;
+  // document.getElementById("Tfb").innerHTML = faceField;
+  // document.getElementById("Tinsta").innerHTML = instaField;
+  // document.getElementById("Tlinked").innerHTML = linkedField;
   document.getElementById("Tjob").innerHTML = jobField;
   document.getElementById("Tobjectives").innerHTML = objField;
 
@@ -65,10 +65,10 @@ function generateCv() {
   document.getElementById("skillname4").innerHTML = skill4;
 
  // document.getElementById("experience_description").innerHTML = workExp;
-  // document.getElementById("progress1").style.width = range1 + "%";
-  // document.getElementById("progress2").style.width = range2 + "%";
-  // document.getElementById("progress3").style.width = range3 + "%";
-  // document.getElementById("progress4").style.width = range4 + "%";
+  document.getElementById("Progress1").style.width = range1 + "%";
+  document.getElementById("Progress2").style.width = range2 + "%";
+  document.getElementById("Progress3").style.width = range3 + "%";
+  document.getElementById("Progress4").style.width = range4 + "%";
   document.getElementById("progress1").value = range1;
   document.getElementById("progress2").value = range2;
   document.getElementById("progress3").value = range3;
@@ -136,9 +136,9 @@ function generateCv() {
   const certinput2 = document.getElementById("cert_name2").value;
   document.getElementById("cert_title2").innerHTML = certinput2;
   const certinput3 = document.getElementById("cert_from1").value;
-  document.getElementById("cert_desc1").innerHTML = certinput3;
+  document.getElementById("cert_desc1").innerHTML = "~ " + certinput3;
   const certinput4 = document.getElementById("cert_from2").value;
-  document.getElementById("cert_desc2").innerHTML = certinput4;
+  document.getElementById("cert_desc2").innerHTML = "~ " + certinput4;
 
   // language
   const langInput = document.getElementsByClassName("language");
@@ -146,6 +146,7 @@ function generateCv() {
   let str = "";
 
   for (let e of langInput) {
+    
     str = str + `<li class="languages_name">
     <span class="languages_circle"></span>${e.value}
   </li>`;
@@ -208,11 +209,11 @@ function autoFill() {
   document.getElementById("cert_name1").value =
   "Certified for compliance in the work area (2012)";
   document.getElementById("cert_from1").value =
-  "~ FreeCodeCamp.com";
+  "FreeCodeCamp.com";
   document.getElementById("cert_name2").value =
   "Certificate of attendance on computer technology";
   document.getElementById("cert_from2").value =
-  "~ Udemy.com";
+  "Udemy.com";
   document.getElementById("lang").value =
   "Arabic";
   

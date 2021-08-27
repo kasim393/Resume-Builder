@@ -444,6 +444,7 @@ img {
 }
 #cv-template {
   display: none;
+  margin-top: 2rem;
 }
 .container{
   max-width: 800px;
@@ -516,4 +517,14 @@ align-items: center;
 .form-container{
   border: 1px solid #444444;
   padding: 5rem;
+}
+
+.re-card{
+  box-shadow: 1px 5px 5px rgba(13, 12, 12, 0.15);
+  transition: 0.3s ease-in-out;
+  height: 500px;
+}
+.re-card:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0 0px 5px #079cff);
 }
